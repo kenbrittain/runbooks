@@ -1,0 +1,8 @@
+version: 1.0
+
+title: Runbook Examples Package
+summary: |
+  A collection of runbooks used to demonstrate the capabilities of the runbook compiler.
+
+runbooks:
+  - HelloWorld@1

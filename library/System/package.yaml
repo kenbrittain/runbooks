@@ -1,0 +1,10 @@
+version: 1.0
+
+title: System Package
+summary: |
+  Runbooks used to interact with the operating system.
+
+runbooks:
+  - Execute
+  - Print
+  - Prompt

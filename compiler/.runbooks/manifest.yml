@@ -1,0 +1,21 @@
+sources:
+  - name: 002-runbook
+    path: 002-runbook.yml
+  - name: 001-runbook
+    path: 001-runbook.yml
+  - name: 003-runbook
+    path: subdir/003-runbook.yml
+views:
+  - generator: Runbook.Resources.Templates.Runbook.md
+    name: 002-runbook
+    path: 002-runbook.md
+  - generator: Runbook.Resources.Templates.Runbook.md
+    name: 001-runbook
+    path: 001-runbook.md
+  - generator: Runbook.Resources.Templates.Runbook.md
+    name: 003-runbook
+    path: subdir/003-runbook.md
+  - generator: Runbook.Resources.Templates.Index.md
+    name: index
+    path: index.md
+scripts: []

@@ -1,0 +1,10 @@
+version: 1.0
+
+title: Runbook Package
+summary: |
+  Runbooks used to interact with the executing runbook.
+
+runbooks:
+  - Banner@1
+  - Exit@1
+  - Put@1

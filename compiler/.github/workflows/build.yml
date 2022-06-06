@@ -1,0 +1,47 @@
+name: build dotnet
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        dotnet-version: ['6.0.x']
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup .NET Core SDK ${{ matrix.dotnet-version }}
+        uses: actions/setup-dotnet@v1.7.2
+        with:
+          dotnet-version: ${{ matrix.dotnet-version }}
+      - name: Restore Dependencies
+        run: dotnet restore
+      - name: Build Program
+        run: dotnet build --configuration Release --no-restore
+      - name: Runs Tests
+        run: dotnet test --no-restore --verbosity normal
+      - name: Publish Linux
+        run: dotnet publish --configuration Release --runtime linux-x64 --self-contained -p:PublishSingleFile=true -p:UseAppHost=true
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v2.2.2
+        with:
+          name: Linux
+          path: Runbook/bin/Release/net6.0/linux-x64/publish/*
+          if-no-files-found: error
+      - name: Publish WIndows
+        run: dotnet publish --configuration Release --runtime win-x64 --self-contained -p:PublishSingleFile=true -p:UseAppHost=true
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v2.2.2
+        with:
+          name: Windows
+          path: Runbook/bin/Release/net6.0/win-x64/publish/*
+          if-no-files-found: error
+      - name: Publish Mac
+        run: dotnet publish --configuration Release --runtime osx-x64 --self-contained -p:PublishSingleFile=true -p:UseAppHost=true
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v2.2.2
+        with:
+          name: Mac
+          path: Runbook/bin/Release/net6.0/osx-x64/publish/*
+          if-no-files-found: error

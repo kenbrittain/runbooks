@@ -1,0 +1,19 @@
+version: 1.0
+
+title: Exit Runbook
+summary: |
+  Call to exit the currently executing runbook.
+
+author: General Software Productions, LLC.
+contact: ken.brittain@runbookcompiler.org
+
+variables:
+  - name: ExitCode
+    type: number
+    summary: The exit code to return to the OS.
+  
+scripts:
+  batch: |
+    @EXIT <ExitCode>
+  bash: |
+    exit <ExitCode>

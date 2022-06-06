@@ -1,0 +1,24 @@
+runbook: 1.0
+
+title: Put Variable into Runbook
+summary: |
+  Call to put a variable into the currently executing runbook.
+
+author: General Software Productions, LLC.
+contact: ken.brittain@runbookcompiler.org
+
+variables:
+  - name: Name
+    type: string
+    summary: Name for the variable in the context.
+  - name: Value
+    type: string
+    summary: Value for the variable.
+  
+scripts:
+  batch:
+    body: |
+      @SET <Name>=<Value>
+  bash: 
+    body: |
+      export <Name>=<Value>

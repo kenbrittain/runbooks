@@ -1,0 +1,22 @@
+runbook: 1.0
+
+title: Print Text
+summary: |
+  Call to display text on the console.
+
+author: General Software Productions, LLC.
+contact: ken.brittain@runbookcompiler.org
+
+variables:
+  - name: Text
+    type: string
+    summary: The text to display.
+  - name: Response
+    type: string
+    summary: Name of the varaible to store the user response.
+  
+scripts:
+  batch: |
+    SET __<Response> = 
+  bash: |
+    echo <Text>

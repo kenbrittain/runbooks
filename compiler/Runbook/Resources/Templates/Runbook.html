@@ -1,0 +1,26 @@
+<!-- DO NOT EDIT! This file has been generate by the Runbook Compiler {{AppVersion}}. -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>{{Runbook.Title}}</title>
+    </head>
+    <body>
+        <h1>{{Runbook.Title}}</h1>
+        <p>{{Runbook.Summary}}</p>
+
+        <ul>
+            <li>Author: {{Runbook.Author}}</li>
+            <li>Contact: {{Runbook.Contact}}</li>
+        </ul>
+
+        <h2>Steps</h2>
+        {{#Runbook.Steps}}
+        <h2>{{Name}}</h2>
+        <p>{{Summary}}</p>
+        {{#Note}}
+        <i>{{.}}</i>
+        {{/Note}}
+        {{/Runbook.Steps}}
+    </body>
+</html>

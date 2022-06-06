@@ -1,0 +1,27 @@
+runbook: 1.0
+
+title: Hello World Runbook
+summary: |
+  This is the first runbook you should execute.
+
+author: General Software Productions, LLC.
+contact: ken.brittain@runbookcompiler.org
+
+actions:
+  - name: runbook-banner
+    summary: Display summary information about the runbook.
+    include:
+      - Runbook.Banner@1
+  - name: ask-for-name
+    summary: |
+      Ask for the user's name first.
+    include:
+      - System.Prompt@1:
+          Text: "What is your name?"
+          Response: UserName
+  - name: display-message
+    summary: |
+      Display a personalized message to the user.
+    include:
+      - System.Print@1:
+          Text: "Hello <UserName>!"

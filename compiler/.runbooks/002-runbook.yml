@@ -1,0 +1,12 @@
+title: TITLE
+summary: SUMMARY
+
+author: AUTHOR
+contact: CONTACT
+
+steps:
+  - name: STEP_NAME_001
+    summary: STEP_SUMMARY_001
+    note: STEP_NOTE_001
+  - name: STEP_NAME_002
+    summary: STEP_SUMMARY_002

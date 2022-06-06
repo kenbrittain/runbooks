@@ -1,0 +1,10 @@
+version: 1.0
+
+title: Standard Runbook Library
+summary: |
+  Runbooks common for all Runbook Compiler installations.
+
+packages:
+  - Examples
+  - Runbook
+  - System

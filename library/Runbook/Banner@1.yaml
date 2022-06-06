@@ -1,0 +1,24 @@
+runbook: 1.0
+
+title: Exit Runbook
+summary: |
+  Call to exit the currently executing runbook.
+
+author: General Software Productions, LLC.
+contact: ken.brittain@runbookcompiler.org
+
+variables:
+  - name: Title
+    type: string
+    summary: The title of the runbook.
+  - name: Summary
+    type: string
+    summary: The summary of the runbook.
+
+scripts:
+  batch: |
+    @ECHO <Title>
+    @ECHO <Summary>
+  bash: |
+    echo <Title>
+    echo <Summary>

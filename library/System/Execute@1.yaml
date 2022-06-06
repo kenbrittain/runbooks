@@ -1,0 +1,24 @@
+runbook: 1.0
+
+title: Execute Command
+summary: |
+  Call to execute an operating system command.
+
+author: General Software Productions, LLC.
+contact: ken.brittain@runbookcompiler.org
+
+variables:
+  - name: Command
+    type: string
+    summary: The OS specific comand to execute when executing this runbook.
+  - name: Arguments
+    type: array
+    summary: Arguments to pass to the command when executing this runbook.
+    default: []
+  
+scripts:
+  batch: |
+    "<Command> <Arguments:{ v |\"<v>\"}>"
+  bash: |
+    "<Command> <Arguments:{ v |\"<v>\"}>"
+    
