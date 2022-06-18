@@ -17,7 +17,7 @@ public class PackageModel : StandardModel
     /// </summary>
     /// <param name="runbookName">Root name of the runbook.</param>
     /// <exception cref="Argumentexception">Thrown when the name if <c>null</c> or empty.</exception>
-    public void AddRunbook(string  runbookName)
+    public void AddRunbook(string runbookName)
     {
 	if (runbookName == null || runbookName == string.Empty)
 	{
