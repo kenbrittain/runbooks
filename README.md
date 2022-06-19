@@ -13,3 +13,19 @@ This repository contains the software for General Software Productions.
 There is a `makefile` in the root of the repository. You can build each 
 project from here.
 
+## Running a runbook interactively
+
+```
+runbook run ./Examples/HelloWorld
+```
+
+This will prompt the user for their name. 
+
+```
+runbook run ./Examples/HelloWorld
+> What is your name? 
+```
+
+
+
+

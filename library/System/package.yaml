@@ -1,10 +1,10 @@
-version: 1.0
+version: 1
 
 title: System Package
 summary: |
   Runbooks used to interact with the operating system.
 
 runbooks:
-  - Execute
-  - Print
-  - Prompt
+  - Execute@1
+  - Print@1
+  - Prompt@1

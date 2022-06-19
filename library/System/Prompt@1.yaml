@@ -17,6 +17,8 @@ variables:
   
 scripts:
   batch: |
-    SET __<Response> = 
+    @ECHO <Text>
+    @SET __<Response> = 
   bash: |
     echo <Text>
+    

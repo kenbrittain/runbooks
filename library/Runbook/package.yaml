@@ -1,4 +1,4 @@
-version: 1.0
+version: 1
 
 title: Runbook Package
 summary: |
@@ -8,3 +8,4 @@ runbooks:
   - Banner@1
   - Exit@1
   - Put@1
+  
