@@ -21,10 +21,9 @@ public class PackageModel : StandardModel
     {
 	if (runbookName == null || runbookName == string.Empty)
 	{
-	    throw new ArgumentException($"The runbook name must contain a value!", nameof(runbookName));
+ 	    throw new ArgumentException($"The runbook name must contain a value!", nameof(runbookName));
 	}
 	
 	_runbooks.Add(runbookName);
     }
 }
-

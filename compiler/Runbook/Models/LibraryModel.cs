@@ -20,4 +20,19 @@ public class LibraryModel : StandardModel
     /// Names of the packages contained in this library.
     /// </summary>
     public IEnumerable<string> Packages => _packages;
+
+    /// <summary>
+    /// Append the <see cref="Packages"/> in this library with the package name.
+    /// </summary>
+    /// <param name="packageName">Name of the package.</param>
+    public void AddPackage(string packageName)
+    {
+	if (packageName == null || packageName == string.Empty)
+	{
+ 	    throw new ArgumentException($"The package name must contain a value!", nameof(packageName));
+	    
+	}
+
+	_packages.Add(packageName);
+    }   
 }
