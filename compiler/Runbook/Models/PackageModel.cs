@@ -7,6 +7,9 @@ public class PackageModel : StandardModel
 {
     private readonly List<string> _runbooks;
 
+    /// <summary>
+    /// Initializes a new <see cref="Packagemodel"/> class that is empty.
+    /// </summary>
     public PackageModel()
     {
 	_runbooks = new List<string>();
