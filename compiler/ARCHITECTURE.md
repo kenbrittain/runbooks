@@ -15,6 +15,13 @@ validate the parameters that were passed in the settings class then
 call the appropriate service methods to complete the command
 functionality.
 
+```mermaid
+flowchart TD
+  git(Clone Git Repository) --> render(Run Render Command)
+  render --> pkg(Package Rendered Runbooks)
+  pkg --> pub(Publish Package)	
+```
+
 # Services
 
 The service classes are exposed using an interface. This deciding
