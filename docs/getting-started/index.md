@@ -49,8 +49,6 @@ Use the `export-runbook` command to generate [Markdown][md] files.
 
 Use the `export-runbook` command to generate [HTML][html] files.
 
-
-
 [md]:https://en.wikipedia.org/wiki/Markdown	"Markdown"
 [html]:https://en.wikipedia.org/wiki/HTML
 [yaml]:https://yaml.org
