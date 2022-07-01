@@ -11,10 +11,11 @@ The following commands are available when the `runbook` command is installed.
 
 ### Manifest Commands
 
-* [create-manifest](commands/create-manifest.md)
-* [show-manifest](commands/show-manifest.md)
+* [create-manifest](create-manifest.md)
+* [show-manifest](show-manifest.md)
 
 ### Runbook Commands
 
-* [export-runbook](commands/export-runbook.md)
+* [export-runbook](export-runbook.md)
+
 
