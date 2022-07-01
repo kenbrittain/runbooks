@@ -1,11 +1,11 @@
-.PHONY: compiler website
+.PHONY: compiler web
 
-all: compiler website
+all: compiler web
  
 compiler:
 	cd ./compiler; \
 	dotnet build --nologo
 
-website:
-	cd ./website; \
+web:
+	cd ./docs; \
 	bundle exec jekyll build
