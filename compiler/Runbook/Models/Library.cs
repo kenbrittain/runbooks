@@ -3,7 +3,7 @@ namespace Runbook.Models;
 /// <summary>
 /// Data model for parsing the <c>library.yaml</c> files that define
 /// </summary>
-public class LibraryModel : StandardModel
+public class Library : StandardModel
 {
     private List<string> _packages;
 
@@ -11,7 +11,7 @@ public class LibraryModel : StandardModel
     /// Initializes a new instance of the <see cref="LibraryModel"/> class that
     /// is empty and ready for accepted newly parsed elements.
     /// </summary>
-    public LibraryModel()
+    public Library()
     {
         _packages = new List<string>();
     }

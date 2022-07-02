@@ -3,14 +3,14 @@ namespace Runbook.Models;
 /// <summary>
 /// Data model for loading package definitions.
 /// </summary>
-public class PackageModel : StandardModel
+public class Package : StandardModel
 {
     private readonly List<string> _runbooks;
 
     /// <summary>
     /// Initializes a new <see cref="Packagemodel"/> class that is empty.
     /// </summary>
-    public PackageModel()
+    public Package()
     {
 	_runbooks = new List<string>();
     }
